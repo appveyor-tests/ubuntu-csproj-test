@@ -10,4 +10,5 @@ dotnet_csproj:
   informational_version: '{version}'
 
 install:
-- ls
+- sh: ls
+- cmd: dir
