@@ -1,5 +1,7 @@
 image: ubuntu
 
+configuration: Release
+
 dotnet_csproj:
   patch: true
   file: '**\*.csproj'
@@ -12,3 +14,11 @@ dotnet_csproj:
 install:
 - sh: ls
 - cmd: dir
+
+before_build:
+- echo "Before build!"
+
+build:
+  project: UbuntuDotNetCoreTests.sln
+  parallel: true
+  verbosity: normal
