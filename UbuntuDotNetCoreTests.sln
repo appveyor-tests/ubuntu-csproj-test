@@ -1,14 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2026
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{F062395C-007B-4ABD-BF11-7C9E73701E97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{F062395C-007B-4ABD-BF11-7C9E73701E97}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AB9D8EF9-7D22-4D27-B7E2-169EB5538627}"
 	ProjectSection(SolutionItems) = preProject
 		appveyor.yml = appveyor.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{25B9443D-CBF9-4E59-9DA2-5A3E4D54661B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{F062395C-007B-4ABD-BF11-7C9E73701E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F062395C-007B-4ABD-BF11-7C9E73701E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F062395C-007B-4ABD-BF11-7C9E73701E97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25B9443D-CBF9-4E59-9DA2-5A3E4D54661B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25B9443D-CBF9-4E59-9DA2-5A3E4D54661B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25B9443D-CBF9-4E59-9DA2-5A3E4D54661B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25B9443D-CBF9-4E59-9DA2-5A3E4D54661B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
