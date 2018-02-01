@@ -15,6 +15,9 @@ dotnet_csproj:
   file_version: '{version}'
   informational_version: '{version}'
 
+init:
+- pwsh: Start-Process -FilePath https://www.google.com
+
 install:
 - pwsh: ./test.ps1
 - sh: ls
