@@ -18,7 +18,7 @@ install:
 before_build:
 - echo "Before build!"
 - cmd: nuget restore
-- sh: dotnet restore
+- sh: dotnet restore -v normal
 
 build:
   project: UbuntuDotNetCoreTests.sln
