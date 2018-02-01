@@ -17,7 +17,7 @@ dotnet_csproj:
 
 init:
 - echo "Привет, Аппвейер!"
-- pwsh: "Привет из PowerShell!"
+- pwsh: Write-Host "Привет из PowerShell!"
 #- pwsh: Start-Process -FilePath https://www.google.com
 
 install:
