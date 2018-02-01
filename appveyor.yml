@@ -16,6 +16,8 @@ dotnet_csproj:
   informational_version: '{version}'
 
 init:
+- echo "Привет, Аппвейер!"
+- pwsh: "Привет из PowerShell!"
 #- pwsh: Start-Process -FilePath https://www.google.com
 
 install:
