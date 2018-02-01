@@ -22,7 +22,7 @@ before_build:
 build:
   project: UbuntuDotNetCoreTests.sln
   parallel: true
-  verbosity: normal
+  verbosity: minimal
   publish_nuget: true
   publish_nuget_symbols: true
   include_nuget_references: true
