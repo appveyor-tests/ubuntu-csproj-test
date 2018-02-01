@@ -19,6 +19,10 @@ install:
 - sh: ls
 - cmd: dir
 
+services:
+- mysql
+- redis
+
 before_build:
 - echo "Before build!"
 - cmd: nuget restore
