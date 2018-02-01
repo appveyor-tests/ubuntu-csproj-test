@@ -23,6 +23,7 @@ install:
 services:
 - mysql
 - redis
+- mysql
 
 before_build:
 - echo "Before build!"
