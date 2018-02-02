@@ -16,7 +16,8 @@ dotnet_csproj:
   informational_version: '{version}'
 
 init:
-- echo "Привет, Аппвейер!"
+- echo Привет, Аппвейер!
+- cmd: echo Контент! > новый_файл.txt
 - pwsh: Write-Host "Привет из PowerShell!"
 #- pwsh: Start-Process -FilePath https://www.google.com
 
