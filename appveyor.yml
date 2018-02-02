@@ -16,6 +16,7 @@ dotnet_csproj:
   informational_version: '{version}'
 
 init:
+- appveyor version
 - echo Привет, Аппвейер!
 - pwsh: Write-Host "Привет из PowerShell!"
 #- pwsh: Start-Process -FilePath https://www.google.com
