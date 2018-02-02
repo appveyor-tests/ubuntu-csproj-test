@@ -17,11 +17,11 @@ dotnet_csproj:
 
 init:
 - echo Привет, Аппвейер!
-- cmd: echo Контент! > новый_файл.txt
 - pwsh: Write-Host "Привет из PowerShell!"
 #- pwsh: Start-Process -FilePath https://www.google.com
 
 install:
+- cmd: echo Контент! > новый_файл.txt
 - pwsh: ./test.ps1
 - sh: ls
 - cmd: dir
