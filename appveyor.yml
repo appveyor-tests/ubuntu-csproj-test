@@ -48,3 +48,13 @@ build:
 
 after_build:
 - ps: $my_variable
+
+on_failure:
+- echo Failure happened!
+
+on_success:
+- pwsh: "Success!"
+- ps: $my_variable
+
+on_finish:
+- ps: Write-Host "Build is finishing..."
