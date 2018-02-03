@@ -36,6 +36,7 @@ before_build:
 - echo "Before build!"
 - cmd: nuget restore
 - sh: dotnet restore -v normal
+- ps: $my_variable = "Set before build!"
 
 build:
   project: UbuntuDotNetCoreTests.sln
@@ -44,3 +45,6 @@ build:
   publish_nuget: true
   publish_nuget_symbols: true
   include_nuget_references: true
+
+after_build:
+- ps: $my_variable
