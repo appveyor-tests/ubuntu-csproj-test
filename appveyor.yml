@@ -53,7 +53,7 @@ on_failure:
 - echo Failure happened!
 
 on_success:
-- 'pwsh: "Success!"'
+- pwsh: '"Success!"'
 - ps: $my_variable
 
 on_finish:
