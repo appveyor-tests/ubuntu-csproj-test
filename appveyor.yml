@@ -35,8 +35,8 @@ services:
 before_build:
 - echo "Before build!"
 - cmd: nuget restore
-- sh: dotnet restore -v normal
 - pwsh: $my_variable = "Set before build!"
+- sh: dotnet restore -v normal
 
 build:
   project: UbuntuDotNetCoreTests.sln
