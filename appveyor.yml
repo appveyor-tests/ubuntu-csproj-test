@@ -2,9 +2,9 @@ image: ubuntu
 
 configuration: Release
 
-nuget:
+#nuget:
 #  account_feed: true
-  project_feed: true
+#  project_feed: true
   
 dotnet_csproj:
   patch: true
