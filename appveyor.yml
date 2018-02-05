@@ -5,7 +5,9 @@ configuration: Release
 #nuget:
 #  account_feed: true
 #  project_feed: true
-  
+
+stack: node 9, python 3.6
+
 dotnet_csproj:
   patch: true
   file: '**\*.csproj'
