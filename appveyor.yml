@@ -28,7 +28,7 @@ install:
 - pwsh: ./test.ps1
 - sh: ls
 - cmd: dir
-- ps: Get-Service
+- ps: Get-WmiObject -Class Win32_Service -Filter "name='WinRM'"
 
 services:
 - mysql
