@@ -28,6 +28,7 @@ install:
 - pwsh: ./test.ps1
 - sh: ls
 - cmd: dir
+- ps: Get-Service
 
 services:
 - mysql
