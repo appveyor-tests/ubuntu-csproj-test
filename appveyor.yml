@@ -19,7 +19,7 @@ dotnet_csproj:
 
 init:
 - appveyor version
-- ps: $PSVersionTable.PSVersion | Format-List *
+- ps: $PSVersionTable.PSVersion
 - echo Привет, Аппвейер!
 - pwsh: Write-Host "Привет из PowerShell!"
 #- pwsh: Start-Process -FilePath https://www.google.com
