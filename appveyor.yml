@@ -53,10 +53,17 @@ after_build:
 - ps: $my_variable
 
 deploy:
+
 - provider: Environment
   name: Test-webhook
   website_name: Site-A
 
+- provider: NuGet
+  api_key:
+    secure: 0WipFNKosQmxBGKfuglXCRwTuNG+uUdGFPiAN1MwgtGeBzKJDL3y9/Otorw4DcmA
+  skip_symbols: false
+  artifact: /.*\.nupkg/
+  
 on_failure:
 - echo Failure happened!
 
