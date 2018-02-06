@@ -52,6 +52,11 @@ build:
 after_build:
 - ps: $my_variable
 
+deploy:
+- provider: Environment
+  name: Test-webhook
+  website_name: Site-A
+
 on_failure:
 - echo Failure happened!
 
