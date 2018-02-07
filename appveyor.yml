@@ -23,11 +23,11 @@ init:
 - cmd: IF DEFINED CI_WINDOWS (ECHO CI_WINDOWS IS defined)
 - ps: $PSVersionTable.PSVersion | Format-List *
 - echo Привет, Аппвейер!
-- pwsh: Write-Host "Привет из PowerShell!"
+- pwsh: Write-Host1 "Привет из PowerShell!"
 #- pwsh: Start-Process -FilePath https://www.google.com
 
 install:
-- cmd: exit /b 2
+#- cmd: exit /b 2
 - cmd: echo Контент! > новый_файл.txt
 - pwsh: ./test.ps1
 - sh: ls
