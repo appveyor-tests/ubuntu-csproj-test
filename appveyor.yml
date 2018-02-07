@@ -51,6 +51,7 @@ before_build:
 - echo "Before build!"
 - cmd: nuget restore
 - pwsh: $my_variable = "Set before build!"
+- sh: ls -al
 - sh: dotnet restore -v normal
 
 build:
