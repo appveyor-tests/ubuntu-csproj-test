@@ -22,7 +22,7 @@ init:
 #- cmd: where sss
 - cmd: IF DEFINED CI_WINDOWS (ECHO CI_WINDOWS IS defined)
 - cmd: IF "%CI_WINDOWS%"=="true" ECHO This is Windows!
-#- ps: $PSVersionTable.PSVersion | Format-List *
+- ps: $PSVersionTable.PSVersion | Format-List *
 - echo Привет, Аппвейер!
 - pwsh: Write-Host "Привет из PowerShell!"
 #- pwsh: Start-Process -FilePath https://www.google.com
@@ -34,7 +34,7 @@ install:
 - sh: ls
 - cmd: dir
 - cd ConsoleApp1
-- ps: dir
+- cmd: dir
 - cd ..
 - dir
 #- ps: Get-WmiObject -Class Win32_Service -Filter "name='WinRM'"
