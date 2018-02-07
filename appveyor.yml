@@ -27,6 +27,7 @@ init:
 #- pwsh: Start-Process -FilePath https://www.google.com
 
 install:
+- cmd: exit /b 2
 - cmd: echo Контент! > новый_файл.txt
 - pwsh: ./test.ps1
 - sh: ls
