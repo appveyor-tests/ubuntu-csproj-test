@@ -27,6 +27,8 @@ init:
 - echo Привет, Аппвейер!
 - pwsh: Write-Host "Привет из PowerShell!"
 #- pwsh: Start-Process -FilePath https://www.google.com
+- node -v
+- sh: nvm use 8.9.4
 
 install:
 #- cmd: exit /b 2
