@@ -6,7 +6,7 @@ configuration: Release
 #  account_feed: true
 #  project_feed: true
 
-#stack: node 9, python 3.6
+stack: node 9, python 3.6
 
 dotnet_csproj:
   patch: true
@@ -19,6 +19,7 @@ dotnet_csproj:
 
 init:
 - appveyor version
+- sh: printenv
 #- cmd: where sss
 - cmd: IF DEFINED CI_WINDOWS (ECHO CI_WINDOWS IS defined)
 - cmd: IF "%CI_WINDOWS%"=="true" ECHO This is Windows!
@@ -42,10 +43,10 @@ install:
 #- dir 11
 #- ps: Get-WmiObject -Class Win32_Service -Filter "name='WinRM'"
 
-#services:
-#- mysql
-#- redis
-#- mysql
+services:
+- mysql
+- redis
+- mysql
 
 before_build:
 #- cat ~/.nuget/NuGet/NuGet.Config
