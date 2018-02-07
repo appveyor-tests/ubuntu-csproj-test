@@ -35,8 +35,9 @@ install:
 - cmd: dir
 - cd ConsoleApp1
 - cmd: dir
+- sh: ls
 - cd ..
-- dir 11
+#- dir 11
 #- ps: Get-WmiObject -Class Win32_Service -Filter "name='WinRM'"
 
 services:
