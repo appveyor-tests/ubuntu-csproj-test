@@ -20,7 +20,6 @@ dotnet_csproj:
 init:
 - appveyor version
 #- cmd: where sss
-- sh: ls aaa
 - cmd: IF DEFINED CI_WINDOWS (ECHO CI_WINDOWS IS defined)
 - cmd: IF "%CI_WINDOWS%"=="true" ECHO This is Windows!
 - ps: $PSVersionTable.PSVersion | Format-List *
