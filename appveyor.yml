@@ -37,6 +37,7 @@ install:
 - cmd: dir
 - sh: ls
 - cd ..
+- sh: ls
 #- dir 11
 #- ps: Get-WmiObject -Class Win32_Service -Filter "name='WinRM'"
 
