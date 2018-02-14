@@ -34,7 +34,7 @@ init:
 #- npm install karma
 - sh: nvm use 9.5.0
 - sh: node -v
-- ps: npm install angularjs
+- ps: npm install -g @angular/cli
 #- ps: node -v
 
 install:
