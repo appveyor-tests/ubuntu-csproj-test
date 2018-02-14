@@ -19,6 +19,7 @@ dotnet_csproj:
 
 init:
 - appveyor version
+- ps: node -v
 - sh: printenv
 - sh: ls -al /bin
 #- cmd: where sss
