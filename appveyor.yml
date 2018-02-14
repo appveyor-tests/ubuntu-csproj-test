@@ -19,7 +19,7 @@ dotnet_csproj:
 
 init:
 - appveyor version
-- pwsh: node -v
+#- pwsh: node -v
 - sh: printenv
 - sh: ls -al /bin
 #- cmd: where sss
@@ -33,7 +33,7 @@ init:
 - node -v
 - sh: nvm use 9.5.0
 - sh: node -v
-- ps: node -v
+#- ps: node -v
 
 install:
 #- cmd: exit /b 2
