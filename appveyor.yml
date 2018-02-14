@@ -20,7 +20,7 @@ dotnet_csproj:
 init:
 - appveyor version
 - sh: 'echo CPU cores number:'
-- sh: cat /proc/cpuinfo | grep processor | wc -l
+#- sh: cat /proc/cpuinfo | grep processor | wc -l
 - sh: 'echo Computer configuration:'
 - sh: sudo lshw
 - pwsh: node -v
@@ -39,7 +39,7 @@ init:
 #- npm install karma
 - sh: nvm use 9.5.0
 - sh: node -v
-- npm install -g @angular/cli
+#- npm install -g @angular/cli
 - ps: node -v
 
 install:
