@@ -19,7 +19,7 @@ dotnet_csproj:
 
 init:
 - appveyor version
-#- pwsh: node -v
+- pwsh: node -v
 #- sudo apt-get update
 - sh: printenv
 - sh: ls -al /bin
@@ -35,8 +35,8 @@ init:
 #- npm install karma
 - sh: nvm use 9.5.0
 - sh: node -v
-#- npm install -g @angular/cli
-#- ps: node -v
+- npm install -g @angular/cli
+- ps: node -v
 
 install:
 #- cmd: exit /b 2
