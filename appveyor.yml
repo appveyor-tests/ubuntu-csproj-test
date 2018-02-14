@@ -21,7 +21,7 @@ init:
 - appveyor version
 - sh: echo CPU cores number:
 - sh: cat /proc/cpuinfo | grep processor | wc -l
-- sh: Computer configuration:
+- sh: 'Echo Computer configuration:'
 - sh: sudo lshw
 - pwsh: node -v
 #- sudo apt-get update
