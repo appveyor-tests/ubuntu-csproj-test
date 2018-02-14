@@ -18,7 +18,8 @@ dotnet_csproj:
   informational_version: '{version}'
 
 init:
-- appveyor version
+- sh: printenv
+#- appveyor version
 - sh: 'echo CPU cores number:'
 - sh: cat /proc/cpuinfo | grep processor | wc -l
 #- sh: 'echo Computer configuration:'
