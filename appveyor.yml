@@ -20,9 +20,9 @@ dotnet_csproj:
 init:
 - appveyor version
 - sh: 'echo CPU cores number:'
-#- sh: cat /proc/cpuinfo | grep processor | wc -l
-- sh: 'echo Computer configuration:'
-- sh: sudo lshw
+- sh: cat /proc/cpuinfo | grep processor | wc -l
+#- sh: 'echo Computer configuration:'
+#- sh: sudo lshw
 - pwsh: node -v
 #- sudo apt-get update
 - sh: printenv
