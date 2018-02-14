@@ -31,8 +31,10 @@ init:
 #- pwsh: Start-Process -FilePath https://www.google.com
 - echo $NVM_DIR
 - node -v
+- npm install karma
 - sh: nvm use 9.5.0
 - sh: node -v
+- ps: npm install yarn -g
 #- ps: node -v
 
 install:
