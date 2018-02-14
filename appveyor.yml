@@ -20,6 +20,7 @@ dotnet_csproj:
 init:
 - appveyor version
 #- pwsh: node -v
+- sudo apt-get update
 - sh: printenv
 - sh: ls -al /bin
 #- cmd: where sss
