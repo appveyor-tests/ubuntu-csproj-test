@@ -53,7 +53,7 @@ install:
 
 - sh: ls
 - cmd: dir
-- cd ConsoleApp1
+- cd ConsoleApp1_
 - cmd: dir
 - sh: ls
 - cd ..
