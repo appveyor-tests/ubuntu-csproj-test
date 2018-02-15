@@ -54,7 +54,7 @@ install:
 - sh: ls
 - cmd: dir
 - cd ConsoleApp1
-- ps: dir1
+- ps: dir
 - sh: ls
 - cd ..
 - sh: ls
