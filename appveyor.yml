@@ -52,8 +52,8 @@ install:
 - pwsh: ./test.ps1
 
 - sh: ls
-- cmd: dir
-- cd ConsoleApp1_
+- cmd: dir1
+- cd ConsoleApp1
 - cmd: dir
 - sh: ls
 - cd ..
