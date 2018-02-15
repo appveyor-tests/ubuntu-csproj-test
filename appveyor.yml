@@ -24,6 +24,7 @@ init:
 - sh: 'echo CPU cores number:'
 - sh: cat /proc/cpuinfo | grep processor | wc -l
 - ps: $my_variable = "This is the value of 'my_variable'"
+- ps: $my_variable
 #- sh: 'echo Computer configuration:'
 #- sh: sudo lshw
 - pwsh: node -v
