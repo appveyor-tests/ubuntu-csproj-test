@@ -112,8 +112,8 @@ on_success:
 - ps: |
     foreach($artifact in $artifacts)
     {
-      Write-Host $artifact.path
-      Write-Host $artifact.url
+      Write-Host $artifact.value.path
+      Write-Host $artifact.value.url
     }
 - pwsh: '"Success!"'
 - pwsh: $my_variable
