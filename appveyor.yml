@@ -2,7 +2,7 @@ image: ubuntu
 
 configuration: Release
 
-shallow_clone: true
+#shallow_clone: true
 
 #nuget:
 #  account_feed: true
