@@ -112,7 +112,8 @@ on_success:
 - ps: |
     foreach($artifact in $artifacts)
     {
-      $artifact.Value
+      $artifact.Value['path']
+      $artifact.Value['url']
     }
 - pwsh: '"Success!"'
 - pwsh: $my_variable
