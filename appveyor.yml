@@ -48,7 +48,7 @@ init:
 - ps: node -v
 
 install:
-#- ps: Start-FileDownload 'https://dl.dropboxusercontent.com/s/c1by0uulee6g8th/wxWidgets.7z?dl=0' -FileName wxWidgets.7z
+- ps: Start-FileDownload 'https://dl.dropboxusercontent.com/s/c1by0uulee6g8th/wxWidgets.7z?dl=0' -FileName wxWidgets.7z
 #- cmd: exit /b 2
 - cmd: echo Контент! > новый_файл.txt
 - pwsh: ./test.ps1
@@ -109,7 +109,7 @@ on_failure:
 #- cmd: dir 2
 
 on_success:
-- ps: $artifacts | ft
+- ps: '$artifacts | % { $_.path; $_.url }'
 - pwsh: '"Success!"'
 - pwsh: $my_variable
 #- cmd: dir 1
