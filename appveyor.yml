@@ -112,7 +112,7 @@ on_success:
 - ps: |
     foreach($artifact in $artifacts)
     {
-      $artifact
+      $artifact.Value
     }
 - pwsh: '"Success!"'
 - pwsh: $my_variable
