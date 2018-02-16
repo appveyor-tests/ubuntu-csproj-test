@@ -109,7 +109,7 @@ on_failure:
 #- cmd: dir 2
 
 on_success:
-- ps: $artifacts
+- ps: $artifacts | ft
 - pwsh: '"Success!"'
 - pwsh: $my_variable
 #- cmd: dir 1
