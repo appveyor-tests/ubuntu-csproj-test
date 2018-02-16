@@ -83,7 +83,7 @@ build:
   include_nuget_references: true
 
 after_build:
-- ps: $my_variable
+- ps: '"After build: $my_variable"'
 
 deploy:
 
