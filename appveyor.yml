@@ -53,7 +53,7 @@ install:
 #- appveyor exit
 - sh: ls
 - cmd: dir
-- cd ConsoleApp1__
+- cd ConsoleApp1
 - ps: dir
 - sh: ls
 - cd ..
@@ -99,12 +99,12 @@ deploy:
   
 on_failure:
 - echo Failure happened!
-- cmd: dir 2
+#- cmd: dir 2
 
 on_success:
 - pwsh: '"Success!"'
 - pwsh: $my_variable
-- cmd: dir 1
+#- cmd: dir 1
 
 on_finish:
 - ps: Write-Host "Build is finishing..."
