@@ -21,7 +21,7 @@ dotnet_csproj:
 
 init:
 - appveyor version
-- ps: Start-Sleep -s 60
+#- ps: Start-Sleep -s 60
 - sh: 'echo CPU cores number:'
 - sh: cat /proc/cpuinfo | grep processor | wc -l
 - ps: $my_variable = "This is the value of 'my_variable'"
