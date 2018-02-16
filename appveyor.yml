@@ -109,7 +109,12 @@ on_failure:
 #- cmd: dir 2
 
 on_success:
-- ps: 'foreach($artifact in $artifacts) { $artifact.path; $artifact.url; }'
+- ps: |
+    foreach($artifact in $artifacts)
+    {
+      Write-Host $artifact.path
+      Write-Host $artifact.url
+    }
 - pwsh: '"Success!"'
 - pwsh: $my_variable
 #- cmd: dir 1
