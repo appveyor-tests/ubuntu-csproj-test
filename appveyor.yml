@@ -86,6 +86,11 @@ build:
 after_build:
 - ps: '"After build: $my_variable"'
 
+artifacts:
+- path: ConsoleApp1
+- path: README.md
+  name: readme
+
 deploy:
 
 - provider: Environment
