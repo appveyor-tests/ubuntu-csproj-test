@@ -48,7 +48,7 @@ init:
 - ps: node -v
 
 install:
-- ps: Start-FileDownload 'https://dl.dropboxusercontent.com/s/c1by0uulee6g8th/wxWidgets.7z?dl=0' -FileName wxWidgets.7z
+#- ps: Start-FileDownload 'https://dl.dropboxusercontent.com/s/c1by0uulee6g8th/wxWidgets.7z?dl=0' -FileName wxWidgets.7z
 #- cmd: exit /b 2
 - cmd: echo Контент! > новый_файл.txt
 - pwsh: ./test.ps1
@@ -98,11 +98,11 @@ deploy:
   name: Test-webhook
   website_name: Site-A
 
-- provider: NuGet
-  api_key:
-    secure: 0WipFNKosQmxBGKfuglXCRwTuNG+uUdGFPiAN1MwgtGeBzKJDL3y9/Otorw4DcmA
-  skip_symbols: false
-  artifact: /.*\.nupkg/
+#- provider: NuGet
+#  api_key:
+#    secure: 0WipFNKosQmxBGKfuglXCRwTuNG+uUdGFPiAN1MwgtGeBzKJDL3y9/Otorw4DcmA
+#  skip_symbols: false
+#  artifact: /.*\.nupkg/
   
 on_failure:
 - echo Failure happened!
