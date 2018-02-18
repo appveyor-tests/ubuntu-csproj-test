@@ -70,6 +70,7 @@ install:
 #- ps: Get-WmiObject -Class Win32_Service -Filter "name='WinRM'"
 
 before_build:
+- sh: docker images
 #- cat ~/.nuget/NuGet/NuGet.Config
 - echo "Before build!"
 - cmd: nuget restore
