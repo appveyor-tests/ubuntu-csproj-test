@@ -69,11 +69,6 @@ install:
 - dir
 #- ps: Get-WmiObject -Class Win32_Service -Filter "name='WinRM'"
 
-services:
-- mysql
-- redis
-- mysql
-
 before_build:
 #- cat ~/.nuget/NuGet/NuGet.Config
 - echo "Before build!"
