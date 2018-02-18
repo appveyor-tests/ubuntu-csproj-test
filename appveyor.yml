@@ -10,6 +10,9 @@ configuration: Release
 
 #stack: node 9, python 3.6
 
+cache:
+- UnitTestProject1 -> appveyor.yml
+
 dotnet_csproj:
   patch: true
   file: '**\*.csproj'
