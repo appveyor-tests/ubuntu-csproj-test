@@ -8,7 +8,7 @@ configuration: Release
 #  account_feed: true
 #  project_feed: true
 
-#stack: node 9, python 3.6
+stack: node 9
 
 cache:
 - UnitTestProject1
