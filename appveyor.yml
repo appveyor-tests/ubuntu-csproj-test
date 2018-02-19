@@ -23,8 +23,8 @@ dotnet_csproj:
   informational_version: '{version}'
 
 hosts:
-  queue-server: 127.0.0.1
-  db.server.com: 127.0.0.2
+  queue-server: 127.0.0.5
+  db.server.com: 127.0.0.6
 
 services:
 - docker
