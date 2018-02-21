@@ -98,7 +98,14 @@ artifacts:
 - path: README.md
   name: readme
 
-#deploy:
+deploy:
+- provider: AzureBlob
+  storage_account_name: appveyordevtestdeleteme
+  storage_access_key:
+    secure: /K+BlwgLkzMrXv61Lb8KgZpDufsPLUP1whmcbSTl52OARRwqGivM2GjaDx+LlkYNc3etJszafTon5HzNwH7060twOPpUlZxSrY3eDvI9yQ0l0CTDBH6gvU1JPffD4w47
+  container: test_deployment
+  folder: aaabbb
+  set_content_type: true
 
 #- provider: Environment
 #  name: Test-webhook
