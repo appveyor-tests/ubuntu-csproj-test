@@ -80,7 +80,7 @@ before_build:
 - cmd: nuget restore
 - pwsh: $my_variable = "Set before build!"
 - sh: ls -al
-- sh: dotnet restore -v normal
+- sh: dotnet restore -v detailed
 
 build:
   project: UbuntuDotNetCoreTests.sln
