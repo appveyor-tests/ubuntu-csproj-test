@@ -75,12 +75,12 @@ install:
 
 before_build:
 #- sh: docker images
-#- cat ~/.nuget/NuGet/NuGet.Config
+- cat ~/.nuget/NuGet/NuGet.Config
 - echo "Before build!"
 - cmd: nuget restore
 - pwsh: $my_variable = "Set before build!"
 - sh: ls -al
-- sh: dotnet restore -v detailed
+- sh: dotnet restore -v normal
 
 build:
   project: UbuntuDotNetCoreTests.sln
