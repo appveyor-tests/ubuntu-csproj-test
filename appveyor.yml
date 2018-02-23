@@ -76,7 +76,7 @@ install:
 before_build:
 #- sh: docker images
 - sh: cat ~/.nuget/NuGet/NuGet.Config
-#- ps: Start-Sleep -s 600
+- ps: Start-Sleep -s 600
 - echo "Before build!"
 - cmd: nuget restore
 - pwsh: $my_variable = "Set before build!"
