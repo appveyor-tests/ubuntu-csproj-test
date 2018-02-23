@@ -4,9 +4,9 @@ configuration: Release
 
 #shallow_clone: true
 
-nuget:
-  account_feed: true
-  project_feed: true
+#nuget:
+#  account_feed: true
+#  project_feed: true
 
 #stack: node 9
 
