@@ -4,9 +4,9 @@ configuration: Release
 
 #shallow_clone: true
 
-#nuget:
-#  account_feed: true
-#  project_feed: true
+nuget:
+  account_feed: true
+  project_feed: true
 
 #stack: node 9
 
@@ -75,7 +75,6 @@ install:
 
 before_build:
 #- sh: docker images
-- sh: dotnet nuget sources add -name AppVeyorAccountFeed -source http://appveyor.local/nuget/feodor-fitsner -username nuget -password $APPVEYOR_WORKER_ID -StorePasswordInClearText
 - sh: cat ~/.nuget/NuGet/NuGet.Config
 #- ps: Start-Sleep -s 600
 - echo "Before build!"
