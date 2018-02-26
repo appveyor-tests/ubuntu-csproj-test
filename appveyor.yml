@@ -64,6 +64,17 @@ init:
 - ps: node -v
 
 install:
+- sh: |
+    versions=( "9.5.0" "8.9.4" "7.10.1" "6.13.1" "5.12.0" "4.8.7" )
+    for version in ${versions[@]}; do
+        nvm use ${version}
+        node --version >${APPVEYOR_BUILD_FOLDER}/${version}.txt
+        if [ $(node --version) = "v${version}" ]; then
+            echo "Correct version ${version}"
+        else
+            return 1
+        fi
+    done
 #- ps: Start-FileDownload 'https://dl.dropboxusercontent.com/s/c1by0uulee6g8th/wxWidgets.7z?dl=0' -FileName wxWidgets.7z
 #- cmd: exit /b 2
 - cmd: echo Контент! > новый_файл.txt
