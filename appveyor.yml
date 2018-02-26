@@ -2,6 +2,12 @@ image: ubuntu
 
 configuration: Release
 
+environment:
+  expected_default_node: v4.
+  expected_lts_node: v8.
+  expected_current_node: v4.
+  expected_stable_node: v9.
+
 #shallow_clone: true
 
 #nuget:
@@ -31,6 +37,18 @@ services:
 
 init:
 - appveyor version
+
+- sh: |
+    echo Default
+    nv=$(node --version)
+    echo $nv
+    if [[ $nv =~ ^$expected_default_node ]]; then
+        echo "Default Node.js version is Correct"
+    else
+        echo "Default Node.js version should be ${expected_default_node}.x"
+        exit 1
+    fi
+
 #- ps: Start-Sleep -s 60
 - sh: 'echo CPU cores number:'
 - sh: cat /proc/cpuinfo | grep processor | wc -l
