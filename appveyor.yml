@@ -14,7 +14,7 @@ environment:
 #  account_feed: true
 #  project_feed: true
 
-#stack: node 9
+stack: python 3
 
 cache:
 - UnitTestProject1
